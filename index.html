@@ -21,13 +21,15 @@
                         <span class="s">S</span>huvajit.
                     </a>
                 </h1>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
+                <ul id="sidebar">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                 </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
                 <h1>I'am <span>Shuvajit</span> <br> Gayen From Kolkata </h1>
@@ -138,14 +140,15 @@
                     <div class="layer">
                         <h3>My Website</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos.</p>
-                        <a href=""><i class="fa-solid fa-link"></i></a>
+                        <a target="_blank" href="#"><i class="fa-solid fa-link"></i></a>
                     </div>
                 </div>
                 <div class="work">
                     <img src="images/todo.png" alt="portfolio2">
                     <div class="layer">
                         <h3>Todo Application</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos a, aliquam atque nisi eveniet voluptates expedita.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos a, aliquam atque nisi
+                            eveniet voluptates expedita.</p>
                         <a href=""><i class="fa-solid fa-link"></i></a>
                     </div>
                 </div>
@@ -153,7 +156,8 @@
                     <img src="images/e-backend.png" alt="portfolio3">
                     <div class="layer">
                         <h3>Ecommerce Backend</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos a, aliquam atque nisi eveniet voluptates expedita mollitia eius fugit magnam.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos a, aliquam atque nisi
+                            eveniet voluptates expedita mollitia eius fugit magnam.</p>
                         <a href=""><i class="fa-solid fa-link"></i></a>
                     </div>
                 </div>
@@ -161,7 +165,8 @@
                     <img src="images/e_admin.png" alt="portfolio4">
                     <div class="layer">
                         <h3>Ecommerce Admin</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos a, aliquam atque nisi eveniet voluptates expedita mollitia.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos a, aliquam atque nisi
+                            eveniet voluptates expedita mollitia.</p>
                         <a href=""><i class="fa-solid fa-link"></i></a>
                     </div>
                 </div>
@@ -169,18 +174,52 @@
                     <img src="images/business.png" alt="portfolio5">
                     <div class="layer">
                         <h3>Business App</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos a, aliquam atque nisi eveniet voluptates expedita.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos a, aliquam atque nisi
+                            eveniet voluptates expedita.</p>
                         <a href=""><i class="fa-solid fa-link"></i></a>
                     </div>
                 </div>
             </div>
-            <div class="work-list">
+            <div class="work-list video-edite">
                 <div>
                     <img src="images/portfolio2.png" alt="video-edite-1">
                 </div>
             </div>
         </div>
     </div>
+    <!-- Portfolio -->
+
+
+    <!-- Contact Section -->
+    <div id="contact">
+        <div class="contener">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope-circle-check"></i>shuvajitgayen57@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>+91 8967343232</p>
+                    <div class="social-icon">
+                        <a target="_blank" href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a target="_blank" href="https://x.com/ShuvajitGa84413"><i class="fa-brands fa-square-x-twitter"></i></a>
+                        <a target="_blank" href="https://www.instagram.com/shuvajit_gayen/"><i class="fa-brands fa-instagram"></i></a>
+                        <a target="_blank" href="https://www.linkedin.com/in/shuvajit-gayen/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a target="_blank" href="https://github.com/shuvajitg"><i class="fa-brands fa-github"></i></i></a>
+                    </div>
+                    <a class="btn" download href="images/shuvajit_gayen_cv.pdf">Downloade CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="7" placeholder="Your Message" required></textarea>
+                        <div id="msg"></div>
+                        <button class="btn btn2" type="submit">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact Section -->
 
 
     <script src="script.js"></script>
