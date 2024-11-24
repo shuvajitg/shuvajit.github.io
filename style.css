@@ -116,6 +116,7 @@ nav ul li a:active {
     gap: 50px;
     justify-content: space-between;
     margin-top: 50px;
+    align-items: center;
 }
 
 #about .contener .row .contener-1 div {
@@ -434,7 +435,7 @@ nav .fa-solid{
     font-size: 25px;
 }
 
-@media only screen and (max-width: 811px){
+@media only screen and (max-width: 840px){
     #header{
         background-image: url('images/phone_bg.jpg');
         width: 100%;
