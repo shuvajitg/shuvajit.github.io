@@ -13,6 +13,7 @@ function opentab(tabname) {
 }
 
 const sideMenu = document.getElementById("sidebar");
+const submit = document.getElementById("submit");
 
 function openmenu() {
   sideMenu.style.right = "0px";
@@ -30,8 +31,13 @@ const msg = document.getElementById("msg");
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   fetch(scriptURL, { method: "POST", body: new FormData(form) })
+//   submit.innerHTML= "Loading.."
     .then((response) => {
         msg.innerHTML = "Message Sended successfully !";
+
+        setTimeout(() => {
+            msg.innerHTML = "";  // Clear the message after 5 seconds.
+        },5000)
         form.reset();
     })
     .catch((error) => {
