@@ -1,6 +1,9 @@
 const tablinks = document.getElementsByClassName("tab-links");
 const tabcontents = document.getElementsByClassName("tab-contents");
 
+// ------------ type writer --------------------------------
+
+
 function opentab(tabname) {
   for (tablink of tablinks) {
     tablink.classList.remove("active-links");

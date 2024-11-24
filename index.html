@@ -33,7 +33,7 @@
             </nav>
             <div class="header-text">
                 <h1>I'am <span>Shuvajit</span> <br> Gayen From Kolkata </h1>
-                <p>Full stack web developer</p>
+                <p id="element"></p>
             </div>
         </div>
     </div>
@@ -108,7 +108,7 @@
                 </div>
                 <div>
                     <i class="fa-solid fa-video"></i>
-                    <h3>Video editing</h3>
+                    <h3>Video Editing</h3>
                     <p>Lorem ipsum dolor sit amet, </p>
                     <a href="#">See more...</a>
                 </div>
@@ -200,10 +200,14 @@
                     <p><i class="fa-solid fa-square-phone"></i>+91 8967343232</p>
                     <div class="social-icon">
                         <a target="_blank" href=""><i class="fa-brands fa-facebook"></i></a>
-                        <a target="_blank" href="https://x.com/ShuvajitGa84413"><i class="fa-brands fa-square-x-twitter"></i></a>
-                        <a target="_blank" href="https://www.instagram.com/shuvajit_gayen/"><i class="fa-brands fa-instagram"></i></a>
-                        <a target="_blank" href="https://www.linkedin.com/in/shuvajit-gayen/"><i class="fa-brands fa-linkedin"></i></a>
-                        <a target="_blank" href="https://github.com/shuvajitg"><i class="fa-brands fa-github"></i></i></a>
+                        <a target="_blank" href="https://x.com/ShuvajitGa84413"><i
+                                class="fa-brands fa-square-x-twitter"></i></a>
+                        <a target="_blank" href="https://www.instagram.com/shuvajit_gayen/"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a target="_blank" href="https://www.linkedin.com/in/shuvajit-gayen/"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a target="_blank" href="https://github.com/shuvajitg"><i
+                                class="fa-brands fa-github"></i></i></a>
                     </div>
                     <a class="btn" download href="images/shuvajit_gayen_cv.pdf">Downloade CV</a>
                 </div>
@@ -222,7 +226,19 @@
     <!-- Contact Section -->
 
 
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['<p>Full Stack Web <span class="developer">Developer</span></p>', 'Ui / Ux Designer', 'Backend / API Development', '&amp; Video Editor.'],
+            typeSpeed: 50,
+            backSpeed: 50,
+            loop: true,
+            showCursor: true,
+        });
+    </script>
     <script src="script.js"></script>
+
 </body>
 
 </html>
